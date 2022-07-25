@@ -1,0 +1,39 @@
+<h1 mat-dialog-title class="cart-title">Your cart info</h1>
+<div mat-dialog-content>
+  <p>Please enter the price and quantity:</p>
+  <mat-form-field appearance="outline" class="fix-prefix" floatLabel="always">
+    <mat-label>Price</mat-label>
+    <span matPrefix>$&nbsp;</span>
+    <input
+      matInput
+      type="number"
+      placeholder="0.00"
+      autocomplete="off"
+      [(ngModel)]="cartData.price"
+    />
+  </mat-form-field>
+  <mat-form-field appearance="outline" class="fix-prefix" floatLabel="always">
+    <mat-label>Quantity</mat-label>
+    <span matPrefix>#&nbsp;</span>
+    <input
+      matInput
+      type="number"
+      placeholder="1"
+      autocomplete="off"
+      [(ngModel)]="cartData.quantity"
+    />
+  </mat-form-field>
+</div>
+
+<div mat-dialog-actions class="buttons">
+  <button mat-raised-button class="button cancel-button" (click)="onCancel()">
+    Cancel
+  </button>
+  <button
+    mat-raised-button
+    [mat-dialog-close]="cartData"
+    class="button save-button"
+  >
+    {{ cartData === undefined ? "Create" : "Save" }}
+  </button>
+</div>

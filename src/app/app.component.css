@@ -1,0 +1,14 @@
+.add-cart-section {
+  margin: 20px auto;
+  width: 50%;
+  text-align: center;
+}
+
+.add-cart-button {
+  background-color: #1c7ed6;
+  color: #fff;
+}
+
+.price-section {
+  margin-top: 16px;
+}

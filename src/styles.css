@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Need to import a theme to make it work properly in StackBlitz */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Need this to fix the prefix in mat-form-field */
+.fix-prefix.mat-form-field-appearance-outline .mat-form-field-prefix {
+    top: 0;
+}

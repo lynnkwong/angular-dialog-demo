@@ -1,0 +1,21 @@
+:host {
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  width: 75px;
+}
+
+.cancel-button {
+  background-color: #ced4da;
+}
+
+.save-button {
+  background-color: #1c7ed6;
+  color: #fff;
+}
